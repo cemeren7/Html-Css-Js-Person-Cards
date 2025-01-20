@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Card-Person</title>
+    <link rel="stylesheet" href="./Person.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card-contact">
+        <div class="img-contact img-one"></div>
+        <h3>Oliver Bennett</h3>
+        <i class="fa-regular fa-user design"></i>
+        <div class="person-info">
+          <p>Oliver Bennett Hakkında Daha Fazla Bilgi Ögrenmek İçin</p>
+        </div>
+        <div class="btn">
+          <button type="button" onclick="read1()" id="btn-1">Read More</button>
+          <button
+            type="button"
+            id="btn-2"
+            style="margin-top: 10px"
+            onclick="read1hide()"
+          >
+            Hide more
+          </button>
+        </div>
+      </div>
+      <div class="card-contact" id="first-2">
+        <div class="img-contact img-two"></div>
+        <h3>Amelia Carter</h3>
+        <i class="fa-regular fa-user"></i>
+        <div class="person-info">
+          <p>Amelia Carter Hakkında Daha Fazla Bilgi Ögrenmek İçin</p>
+        </div>
+        <div class="btn">
+          <button type="button" onclick="read2()">Read More</button>
+          <button type="button" style="margin-top: 10px" onclick="read2hide()">
+            Hide more
+          </button>
+        </div>
+      </div>
+      <div class="card-contact">
+        <div class="img-contact img-three"></div>
+        <h3>Liam Thompson</h3>
+        <i class="fa-regular fa-user"></i>
+        <div class="person-info">
+          <p>Liam Thompson Hakkında Daha Fazla Bilgi Ögrenmek İçin</p>
+        </div>
+        <div class="btn">
+          <button type="button" onclick="read3()">Read More</button>
+          <button type="button" style="margin-top: 10px" onclick="read3hide()">
+            Hide more
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="read-container">
+      <div id="read1" class="read" style="line-height: 21px">
+        <p>
+          Oliver Bennett, 15 Nisan 1985 doğumlu, Londra’da yaşayan bir iş
+          profesyonelidir. London School of Economics'te İşletme Yönetimi
+          alanında MBA (2010-2012) ve Cambridge Üniversitesi’nde Bilgisayar
+          Mühendisliği Lisansı (2003-2007) derecelerini tamamlamıştır. 2017
+          yılından bu yana TechVista Solutions’da Genel Müdür olarak görev
+          yapmaktadır. Bu süreçte şirketin gelirlerini %35 artırmış ve
+          uluslararası projelerde liderlik etmiştir. Daha önce 2012-2017 yılları
+          arasında Innovate UK’de Kıdemli Proje Yöneticisi olarak büyük veri
+          projeleri ve süreç optimizasyonları üzerinde çalışmıştır. Stratejik
+          planlama, büyük veri analitiği ve ekip yönetimi konularında uzmandır.
+          İngilizce, Fransızca ve Almanca bilmektedir.
+        </p>
+      </div>
+      <div id="read2" class="read" style="line-height: 21px">
+        <p>
+          Amelia Carter, 22 Eylül 1992 doğumlu, Manchester’da yaşayan bir
+          kreatif direktördür. Dijital Pazarlama Yüksek Lisansı'nı (2014-2016)
+          Manchester Üniversitesi’nde, Grafik Tasarım Lisansı'nı (2010-2014)
+          Royal College of Art’ta tamamlamıştır. 2018 yılından beri Bright
+          Agency’de Kreatif Direktör olarak çalışmakta, markaların pazar
+          paylarını artıran stratejiler geliştirmektedir. Daha önce
+          MediaCraft’ta grafik tasarımcı olarak görev almış, kampanya
+          görselleriyle %98 müşteri memnuniyeti sağlamıştır. Adobe Creative
+          Suite, SEO, dijital pazarlama ve sosyal medya yönetimi konularında
+          uzman olup İngilizce ve İspanyolca bilmektedir.
+        </p>
+      </div>
+      <div id="read3" class="read" style="line-height: 21px">
+        <p>
+          Liam Thompson, 3 Mart 1988 doğumlu, Birmingham’da yaşayan bir yazılım
+          mühendisidir. Imperial College London’da Bilgisayar Bilimleri Yüksek
+          Lisansı (2012-2014) ve Edinburgh Üniversitesi’nde Matematik Lisansı
+          (2007-2011) derecelerini almıştır. 2017 yılından itibaren CodeGenix’de
+          Kıdemli Yazılım Mühendisi olarak görev yapmakta, AI ve makine öğrenimi
+          projeleri geliştirmektedir. Öncesinde NextTech Solutions’da yazılım
+          mühendisi olarak çalışmış, büyük ölçekli veri işleme sistemleri
+          üzerinde çalışmıştır. Python, Java, C++ gibi programlama dillerine
+          hakim olup veri tabanı yönetimi ve bulut bilişim alanlarında
+          uzmanlaşmıştır.
+        </p>
+      </div>
+    </div>
+
+    <script src="./person.js"></script>
+  </body>
+</html>
